@@ -5,7 +5,7 @@ export default {
             'leading-none',
 
             // Flex
-            { 'flex-1 w-[1%]': parent.instance.$name == 'InputGroup' },
+            { 'flex-1 w-[1%]': parent.instance.$name === 'InputGroup' },
 
             // Spacing
             'm-0',
@@ -13,16 +13,16 @@ export default {
 
             // Size
             {
-                'py-3 px-3.5': props.size == 'large',
-                'py-1.5 px-2': props.size == 'small',
-                'py-2 px-3': props.size == null
+                'py-3 px-3.5': props.size === 'large',
+                'py-1.5 px-2': props.size === 'small',
+                'py-2 px-3': props.size === null
             },
 
             // Shape
             { 'rounded-md': parent.instance.$name !== 'InputGroup' },
-            { 'first:rounded-l-md rounded-none last:rounded-r-md': parent.instance.$name == 'InputGroup' },
-            { 'border-0 border-y border-l last:border-r': parent.instance.$name == 'InputGroup' },
-            { 'first:ml-0 -ml-px': parent.instance.$name == 'InputGroup' && !props.showButtons },
+            { 'first:rounded-l-md rounded-none last:rounded-r-md': parent.instance.$name === 'InputGroup' },
+            { 'border-0 border-y border-l last:border-r': parent.instance.$name === 'InputGroup' },
+            { 'first:ml-0 -ml-px': parent.instance.$name === 'InputGroup' && !props.showButtons },
 
             // Colors
             'text-surface-800 dark:text-white/80',
@@ -44,7 +44,7 @@ export default {
             },
 
             // Filled State *for FloatLabel
-            { filled: (parent.instance?.$name == 'FloatLabel' && context.filled) || (parent.instance?.$parentInstance?.$name == 'FloatLabel' && parent.props.modelValue !== null && parent.props.modelValue?.length !== 0) },
+            { filled: (parent.instance?.$name === 'FloatLabel' && context.filled) || (parent.instance?.$parentInstance?.$name === 'FloatLabel' && parent.props.modelValue !== null && parent.props.modelValue?.length !== 0) },
 
             // Misc
             'appearance-none',

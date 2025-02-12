@@ -48,9 +48,9 @@ export default {
 
             // Colors
             {
-                'bg-red-500 dark:bg-red-400/50': instance?.meter?.strength == 'weak',
-                'bg-orange-500 dark:bg-orange-400/50': instance?.meter?.strength == 'medium',
-                'bg-green-500 dark:bg-green-400/50': instance?.meter?.strength == 'strong'
+                'bg-red-500 dark:bg-red-400/50': instance?.meter?.strength === 'weak',
+                'bg-orange-500 dark:bg-orange-400/50': instance?.meter?.strength === 'medium',
+                'bg-green-500 dark:bg-green-400/50': instance?.meter?.strength === 'strong'
             },
 
             // Transitions

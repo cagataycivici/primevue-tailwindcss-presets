@@ -48,10 +48,10 @@ export default {
             // Color and Background
             'bg-transparent',
             'border-0',
-            { 'text-surface-800 dark:text-white/80': props.modelValue != undefined, 'text-surface-400 dark:text-surface-500': props.modelValue == undefined },
+            { 'text-surface-800 dark:text-white/80': props.modelValue !== undefined, 'text-surface-400 dark:text-surface-500': props.modelValue === undefined },
             {
-                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name == 'FloatLabel',
-                '!text-transparent dark:!text-transparent': (parent.instance?.$name == 'FloatLabel' && props.modelValue == null) || props.modelValue?.length == 0
+                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name === 'FloatLabel',
+                '!text-transparent dark:!text-transparent': (parent.instance?.$name === 'FloatLabel' && props.modelValue === null) || props.modelValue?.length === 0
             },
 
             // Sizing and Spacing
@@ -70,7 +70,7 @@ export default {
             'focus:outline-none focus:shadow-none',
 
             // Filled State *for FloatLabel
-            { filled: parent.instance?.$name == 'FloatLabel' && props.modelValue !== null },
+            { filled: parent.instance?.$name === 'FloatLabel' && props.modelValue !== null },
 
             // Misc
             'relative',

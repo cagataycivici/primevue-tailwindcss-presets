@@ -35,8 +35,8 @@ export default {
                 'text-surface-700 dark:text-white/80': props.value !== props.modelValue && props.value !== undefined,
                 'bg-surface-0 dark:bg-surface-900': props.value !== props.modelValue && props.value !== undefined,
                 'border-surface-100 dark:border-surface-700': props.value !== props.modelValue && props.value !== undefined && !props.invalid,
-                'border-primary': props.value == props.modelValue && props.value !== undefined,
-                'bg-primary': props.value == props.modelValue && props.value !== undefined
+                'border-primary': props.value === props.modelValue && props.value !== undefined,
+                'bg-primary': props.value === props.modelValue && props.value !== undefined
             },
             // Invalid State
             { 'border-red-500 dark:border-red-400': props.invalid },
@@ -44,7 +44,7 @@ export default {
             // States
             {
                 'peer-hover:border-primary dark:peer-hover:border-primary': !props.disabled && !props.invalid,
-                'peer-hover:border-primary-emphasis peer-hover:bg-primary-emphasis': !props.disabled && props.value == props.modelValue && props.value !== undefined,
+                'peer-hover:border-primary-emphasis peer-hover:bg-primary-emphasis': !props.disabled && props.value === props.modelValue && props.value !== undefined,
                 'peer-focus-visible:border-primary-500 dark:peer-focus-visible:border-primary-400 peer-focus-visible:ring-2 peer-focus-visible:ring-primary-400/20 dark:peer-focus-visible:ring-primary-300/20': !props.disabled,
                 'opacity-60 cursor-default': props.disabled
             }
@@ -94,7 +94,7 @@ export default {
             // Conditions
             {
                 'backface-hidden scale-10 invisible': props.value !== props.modelValue,
-                'transform visible scale-[1.1]': props.value == props.modelValue
+                'transform visible scale-[1.1]': props.value === props.modelValue
             },
 
             // Transition

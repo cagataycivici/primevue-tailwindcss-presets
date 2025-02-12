@@ -44,12 +44,12 @@ export default {
             context.selected ? 'bg-highlight text-highlight-contrast ' : 'bg-transparent text-surface-600 dark:text-white/70',
 
             // States
-            { 'hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]': (props.selectionMode == 'single' || props.selectionMode == 'multiple') && !context.selected },
+            { 'hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]': (props.selectionMode === 'single' || props.selectionMode === 'multiple') && !context.selected },
 
             // Transition
             'transition-shadow duration-200',
 
-            { 'cursor-pointer select-none': props.selectionMode == 'single' || props.selectionMode == 'multiple' }
+            { 'cursor-pointer select-none': props.selectionMode === 'single' || props.selectionMode === 'multiple' }
         ]
     }),
     nodeToggleButton: ({ context }) => ({

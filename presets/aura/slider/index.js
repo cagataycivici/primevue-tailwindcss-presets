@@ -4,7 +4,7 @@ export default {
             'relative',
 
             // Size
-            { 'h-[3px]': props.orientation == 'horizontal', 'w-[3px]': props.orientation == 'vertical' },
+            { 'h-[3px]': props.orientation === 'horizontal', 'w-[3px]': props.orientation === 'vertical' },
 
             // Shape
             'border-0',
@@ -22,14 +22,14 @@ export default {
             // Position
             'block absolute',
             {
-                'top-0 left-0': props.orientation == 'horizontal',
-                'bottom-0 left-0': props.orientation == 'vertical'
+                'top-0 left-0': props.orientation === 'horizontal',
+                'bottom-0 left-0': props.orientation === 'vertical'
             },
 
             //Size
             {
-                'h-full': props.orientation == 'horizontal',
-                'w-full': props.orientation == 'vertical'
+                'h-full': props.orientation === 'horizontal',
+                'w-full': props.orientation === 'vertical'
             },
 
             // Shape
@@ -47,8 +47,8 @@ export default {
             'h-[20px]',
             'w-[20px]',
             {
-                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation == 'horizontal',
-                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation == 'vertical'
+                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation === 'horizontal',
+                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation === 'vertical'
             },
 
             // Shape
@@ -79,8 +79,8 @@ export default {
             'h-[20px]',
             'w-[20px]',
             {
-                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation == 'horizontal',
-                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation == 'vertical'
+                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation === 'horizontal',
+                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation === 'vertical'
             },
 
             // Shape
@@ -111,8 +111,8 @@ export default {
             'h-[20px]',
             'w-[20px]',
             {
-                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation == 'horizontal',
-                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation == 'vertical'
+                'top-[50%] -mt-[10px] -ml-[10px]': props.orientation === 'horizontal',
+                'left-[50%] -mb-[10px] -ml-[10px]': props.orientation === 'vertical'
             },
 
             // Shape

@@ -37,7 +37,7 @@ export default {
 
                 // Shape
                 'appearance-none',
-                { 'rounded-md': !props.showIcon || props.iconDisplay == 'input' },
+                { 'rounded-md': !props.showIcon || props.iconDisplay === 'input' },
                 { 'rounded-l-md  flex-1 pr-9': props.showIcon && props.iconDisplay !== 'input' },
                 { 'rounded-md flex-1 pr-9': props.showIcon && props.iconDisplay === 'input' },
 
@@ -50,7 +50,7 @@ export default {
                 'focus:outline-none focus:outline-offset-0 focus:ring focus:ring-primary-500/50 dark:focus:ring-primary-400/50',
 
                 // Filled State *for FloatLabel
-                { filled: parent.instance?.$name == 'FloatLabel' && props.modelValue !== null }
+                { filled: parent.instance?.$name === 'FloatLabel' && props.modelValue !== null }
             ]
         }
     }),

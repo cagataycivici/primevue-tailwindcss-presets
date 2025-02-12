@@ -12,7 +12,7 @@ export default {
             // Color
             'bg-surface-50 dark:bg-surface-700',
             'border border-surface-200 dark:border-surface-700',
-            { 'p-2 items-center': props.orientation == 'horizontal', 'flex-col sm:w-48 p-0 py-1': props.orientation !== 'horizontal' }
+            { 'p-2 items-center': props.orientation === 'horizontal', 'flex-col sm:w-48 p-0 py-1': props.orientation !== 'horizontal' }
         ]
     }),
     rootList: ({ props }) => ({

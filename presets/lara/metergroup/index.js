@@ -4,7 +4,7 @@ export default {
             // Flexbox
             'flex gap-4',
 
-            { 'flex-col': props.orientation == 'horizontal', 'flex-row': props.orientation == 'vertical' }
+            { 'flex-col': props.orientation === 'horizontal', 'flex-row': props.orientation === 'vertical' }
         ]
     }),
     meters: ({ props }) => ({

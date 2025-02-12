@@ -19,7 +19,7 @@ export default {
             //Colors
             'text-primary-contrast',
             {
-                'bg-primary dark:bg-primary': props.severity == null || props.severity === 'primary',
+                'bg-primary dark:bg-primary': props.severity === null || props.severity === 'primary',
                 'text-surface-700 dark:text-surface-300 bg-surface-100 dark:bg-surface-500/20': props.severity === 'secondary',
                 'bg-green-500 dark:bg-green-400': props.severity === 'success',
                 'bg-blue-500 dark:bg-blue-400': props.severity === 'info',

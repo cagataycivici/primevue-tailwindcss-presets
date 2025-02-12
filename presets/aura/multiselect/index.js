@@ -49,12 +49,12 @@ export default {
             // Color
             { 'text-surface-800 dark:text-white/80': props.modelValue?.length, 'text-surface-400 dark:text-surface-500': !props.modelValue?.length },
             {
-                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name == 'FloatLabel',
-                '!text-transparent dark:!text-transparent': (parent.instance?.$name == 'FloatLabel' && props.modelValue == null) || props.modelValue?.length == 0
+                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name === 'FloatLabel',
+                '!text-transparent dark:!text-transparent': (parent.instance?.$name === 'FloatLabel' && props.modelValue === null) || props.modelValue?.length === 0
             },
 
             // Filled State *for FloatLabel
-            { filled: parent.instance?.$name == 'FloatLabel' && props.modelValue !== null },
+            { filled: parent.instance?.$name === 'FloatLabel' && props.modelValue !== null },
 
             // Transitions
             'transition duration-200',
