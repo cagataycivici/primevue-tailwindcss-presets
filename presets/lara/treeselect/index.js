@@ -43,12 +43,12 @@ export default {
             // Color
             'text-surface-800 dark:text-white/80',
             {
-                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name == 'FloatLabel',
-                '!text-transparent dark:!text-transparent': (parent.instance?.$name == 'FloatLabel' && props.modelValue == null) || props.modelValue?.length == 0
+                'placeholder:text-transparent dark:placeholder:text-transparent': parent.instance?.$name === 'FloatLabel',
+                '!text-transparent dark:!text-transparent': (parent.instance?.$name === 'FloatLabel' && props.modelValue === null) || props.modelValue?.length === 0
             },
 
             // Filled State *for FloatLabel
-            { filled: parent.instance?.$name == 'FloatLabel' && props.modelValue !== null },
+            { filled: parent.instance?.$name === 'FloatLabel' && props.modelValue !== null },
 
             // Transition
             'transition duration-200',

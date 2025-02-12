@@ -13,7 +13,7 @@ export default {
         class: [
             // Position
             'absolute top-0 left-0 right-0 bottom-0',
-            { 'before:transform before:translate-x-4': props.modelValue == props.trueValue },
+            { 'before:transform before:translate-x-4': props.modelValue === props.trueValue },
 
             // Shape
             'rounded-2xl',
@@ -28,9 +28,9 @@ export default {
 
             // Colors
             {
-                'bg-surface-300 dark:bg-surface-800': !(props.modelValue == props.trueValue) && !props.invalid,
-                'bg-primary': props.modelValue == props.trueValue && !props.invalid,
-                'before:dark:bg-surface-950': props.modelValue == props.trueValue
+                'bg-surface-300 dark:bg-surface-800': !(props.modelValue === props.trueValue) && !props.invalid,
+                'bg-primary': props.modelValue === props.trueValue && !props.invalid,
+                'before:dark:bg-surface-950': props.modelValue === props.trueValue
             },
 
             // Invalid State
@@ -38,8 +38,8 @@ export default {
             { 'peer-hover:bg-red-500 dark:peer-hover:bg-red-200': props.invalid },
 
             // States
-            { 'peer-hover:bg-surface-400 dark:peer-hover:bg-surface-700': !(props.modelValue == props.trueValue) && !props.disabled && !props.invalid },
-            { 'peer-hover:bg-primary-emphasis': props.modelValue == props.trueValue && !props.disabled && !props.invalid },
+            { 'peer-hover:bg-surface-400 dark:peer-hover:bg-surface-700': !(props.modelValue === props.trueValue) && !props.disabled && !props.invalid },
+            { 'peer-hover:bg-primary-emphasis': props.modelValue === props.trueValue && !props.disabled && !props.invalid },
             'peer-focus-visible:ring-1 peer-focus-visible:ring-primary-500 dark:peer-focus-visible:ring-primary-400',
 
             // Transition

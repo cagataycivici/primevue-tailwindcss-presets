@@ -36,7 +36,7 @@ export default {
 
                 // Shape
                 'appearance-none',
-                { 'rounded-md': !props.showIcon || props.iconDisplay == 'input' },
+                { 'rounded-md': !props.showIcon || props.iconDisplay === 'input' },
                 { 'rounded-l-md  flex-1 pr-9': props.showIcon && props.iconDisplay !== 'input' },
                 { 'rounded-md flex-1 pr-9': props.showIcon && props.iconDisplay === 'input' },
 
@@ -52,7 +52,7 @@ export default {
                 },
 
                 // Filled State *for FloatLabel
-                { filled: parent.instance?.$name == 'FloatLabel' && props.modelValue !== null }
+                { filled: parent.instance?.$name === 'FloatLabel' && props.modelValue !== null }
             ]
         }
     }),

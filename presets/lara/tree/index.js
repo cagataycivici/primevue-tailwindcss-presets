@@ -46,12 +46,12 @@ export default {
             { 'bg-highlight': context.selected },
 
             // States
-            { 'hover:bg-surface-50 dark:hover:bg-surface-700/40': (props.selectionMode == 'single' || props.selectionMode == 'multiple') && !context.selected },
+            { 'hover:bg-surface-50 dark:hover:bg-surface-700/40': (props.selectionMode === 'single' || props.selectionMode === 'multiple') && !context.selected },
 
             // Transition
             'transition-shadow duration-200',
 
-            { 'cursor-pointer select-none': props.selectionMode == 'single' || props.selectionMode == 'multiple' }
+            { 'cursor-pointer select-none': props.selectionMode === 'single' || props.selectionMode === 'multiple' }
         ]
     }),
     nodeToggleButton: ({ context }) => ({

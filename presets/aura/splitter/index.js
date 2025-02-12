@@ -36,7 +36,7 @@ export default {
 
             // Misc
             {
-                'cursor-col-resize': props.layout == 'horizontal',
+                'cursor-col-resize': props.layout === 'horizontal',
                 'cursor-row-resize': props.layout !== 'horizontal'
             }
         ]
@@ -60,7 +60,7 @@ export default {
 
             // Sizing (Conditional)
             {
-                'h-[1.70rem]': props.layout == 'horizontal',
+                'h-[1.70rem]': props.layout === 'horizontal',
                 'w-[1.70rem] h-2': props.layout !== 'horizontal'
             }
         ]

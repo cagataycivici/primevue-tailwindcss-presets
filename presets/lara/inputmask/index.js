@@ -30,9 +30,9 @@ export default {
 
                 // Filled State *for FloatLabel
                 {
-                    filled: (parent.instance?.$name == 'FloatLabel' && context.filled) || (parent.instance?.$parentInstance?.$name == 'FloatLabel' && parent.props.modelValue !== null && parent.props.modelValue?.length !== 0)
+                    filled: (parent.instance?.$name === 'FloatLabel' && context.filled) || (parent.instance?.$parentInstance?.$name === 'FloatLabel' && parent.props.modelValue !== null && parent.props.modelValue?.length !== 0)
                 },
-                parent.instance?.$name == 'FloatLabel' || parent.instance?.$parentInstance?.$name == 'FloatLabel' ? 'placeholder:text-transparent dark:placeholder:text-transparent' : 'placeholder:text-surface-400 dark:placeholder:text-surface-500',
+                parent.instance?.$name === 'FloatLabel' || parent.instance?.$parentInstance?.$name === 'FloatLabel' ? 'placeholder:text-transparent dark:placeholder:text-transparent' : 'placeholder:text-surface-400 dark:placeholder:text-surface-500',
 
                 // Misc
                 'rounded-md',

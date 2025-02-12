@@ -14,7 +14,7 @@ export default {
             { 'first:ml-0 -ml-px': parent.instance.$name === 'InputGroup' && !props.showButtons },
 
             //Sizing
-            { '!w-16': props.showButtons && props.buttonLayout == 'vertical' }
+            { '!w-16': props.showButtons && props.buttonLayout === 'vertical' }
         ]
     }),
     pcInput: {
@@ -28,7 +28,7 @@ export default {
                 { 'w-[1%]': parent.props.fluid },
 
                 //Text
-                { 'text-center': parent.props.showButtons && parent.props.buttonLayout == 'vertical' },
+                { 'text-center': parent.props.showButtons && parent.props.buttonLayout === 'vertical' },
 
                 // Spacing
                 'py-2 px-3',
@@ -62,7 +62,7 @@ export default {
                 { filled: parent.instance?.$parentInstance?.$name === 'FloatLabel' && parent.state.d_modelValue !== null },
 
                 //Position
-                { 'order-2': parent.props.buttonLayout == 'horizontal' || parent.props.buttonLayout === 'vertical' }
+                { 'order-2': parent.props.buttonLayout === 'horizontal' || parent.props.buttonLayout === 'vertical' }
             ]
         })
     },
@@ -113,7 +113,7 @@ export default {
 
             // Shape
             'rounded-md',
-            { 'rounded-md': props.showButtons && props.buttonLayout == 'stacked' },
+            { 'rounded-md': props.showButtons && props.buttonLayout === 'stacked' },
             { 'rounded-bl-none rounded-tl-none': props.showButtons && props.buttonLayout === 'horizontal' },
             { 'rounded-bl-none rounded-br-none': props.showButtons && props.buttonLayout === 'vertical' },
 

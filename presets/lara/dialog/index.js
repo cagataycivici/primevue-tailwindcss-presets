@@ -103,7 +103,7 @@ export default {
             // Transitions
             'transition-all',
             'duration-300',
-            { 'p-5': !props.position == 'full' },
+            { 'p-5': !props.position === 'full' },
 
             // Background and Effects
             { 'has-[.mask-active]:bg-transparent bg-black/40': props.modal, 'has-[.mask-active]:backdrop-blur-none backdrop-blur-sm': props.modal }

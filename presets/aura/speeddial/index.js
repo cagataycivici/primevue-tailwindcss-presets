@@ -32,10 +32,10 @@ export default {
 
             // Conditional Spacing
             {
-                'my-1 first:mb-2': props.direction == 'up' && props.type == 'linear',
-                'my-1 first:mt-2': props.direction == 'down' && props.type == 'linear',
-                'mx-1 first:mr-2': props.direction == 'left' && props.type == 'linear',
-                'mx-1 first:ml-2': props.direction == 'right' && props.type == 'linear'
+                'my-1 first:mb-2': props.direction === 'up' && props.type === 'linear',
+                'my-1 first:mt-2': props.direction === 'down' && props.type === 'linear',
+                'mx-1 first:mr-2': props.direction === 'left' && props.type === 'linear',
+                'mx-1 first:ml-2': props.direction === 'right' && props.type === 'linear'
             },
 
             // Conditional Positioning
