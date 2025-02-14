@@ -200,7 +200,7 @@ export default {
             'cursor-pointer overflow-hidden select-none',
 
             // Badge
-            '[&>[data-pc-name=badge]]:min-w-4 [&>[data-pc-name=badge]]:h-4 [&>[data-pc-name=badge]]:leading-4'
+            '[&>[data-pc-name=pcbadge]]:min-w-4 [&>[data-pc-name=pcbadge]]:h-4 [&>[data-pc-name=pcbadge]]:leading-4'
         ]
     }),
     label: ({ props }) => ({
@@ -236,7 +236,7 @@ export default {
             'animate-spin'
         ]
     }),
-    badge: ({ props }) => ({
-        class: [{ 'ml-2 w-4 h-4 leading-none flex items-center justify-center': props.badge }]
+    pcBadge: ({ props }) => ({
+        root: { class: [{ 'ml-2 w-4 h-4 leading-none flex items-center justify-center': props.badge }] }
     })
 };
